@@ -26,7 +26,7 @@ function FL:LootItems()
 	end
 
 	for i = 0, NUM_BAG_SLOTS do
-		if not GetBagName(i) then
+		if not C_Container.GetBagName(i) then
 			HaveEmptyBagSlots = HaveEmptyBagSlots + 1
 		end
 	end
